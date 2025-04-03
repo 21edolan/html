@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Country File</title>
+    </head>
+    <body>
+        <form id='lettr'>
+            <label for="fname">What is your name?:</label><br>
+            <input type="fname" id="fname" name="fname"><br>
+            <label for="age">What age are you?:</label><br>
+            <input type="age" id="ag3" name="age"><br>
+            <label for="text">What country do you live in?:</label><br>
+            <input type="text" id="country" name="country"><br>
+            <label for="text2">What is your favourite country you have visited?:</label><br>
+            <input type="text2" id="country2" name="country2"><br>
+            <label for='desc'>Would you travel to Ireland?:</label>
+            <select id='desc'>
+                <option value='yes'>Yes</option>
+                <option value='no'>No</option>
+            </select><br>
+            <br>
+                <input type="checkbox" id='check' name='chckbx' value='newsletter'>
+                <label for='check'>I would like to subscribe to the weekly newsletter</label><br>
+                <br>
+            <input type='submit' value='submit'>
+            
+    </form>
+        <script>
+            let formID = document.getElementById("lettr")
+            formID.addEventListener("submit",userData)
+            function userData(event){
+                event.preventDefault()}
+        </script>
+    </body>
