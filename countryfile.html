@@ -13,22 +13,26 @@
             <input type="text" id="country" name="country"><br>
             <label for="text2">What is your favourite country you have visited?:</label><br>
             <input type="text2" id="country2" name="country2"><br>
-            <label for='desc'>Would you travel to Ireland?:</label>
-            <select id='desc'>
-                <option value='yes'>Yes</option>
-                <option value='no'>No</option>
-            </select><br>
+            <br>
+            <label for='desc'>Would you travel to Ireland?:</label><br>
+                <input type='radio' id='Yes' name='Yes' value='yes'>
+                <lable for='Yes'>Yes</lable><br>
+                <input type='radio' id='No' name='Yes' value='No'>
+                <label for='No'>No</label>
+            <br>
             <br>
                 <input type="checkbox" id='check' name='chckbx' value='newsletter'>
                 <label for='check'>I would like to subscribe to the weekly newsletter</label><br>
                 <br>
             <input type='submit' value='submit'>
-            
-    </form>
+        </form>
         <script>
             let formID = document.getElementById("lettr")
             formID.addEventListener("submit",userData)
             function userData(event){
-                event.preventDefault()}
+                event.preventDefault()
+                let newpge=document.getElementById('fname')
+                console.log(newpge.value)}
         </script>
     </body>
+</html>
